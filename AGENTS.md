@@ -17,7 +17,7 @@ A2A agent for Matrix integration within the OpenSIN ecosystem.
 
 ## Security
 
-- All operations logged to OpenSIN-Ledger
+- All operations logged to the approved artifact storage surface
 - Requires authorization token
 - Guardrails enforced on all inputs/outputs
 
@@ -26,33 +26,19 @@ A2A agent for Matrix integration within the OpenSIN ecosystem.
 ```bash
 git clone https://github.com/OpenSIN-AI/A2A-SIN-Matrix.git
 cd A2A-SIN-Matrix
-npm install
-npm start
+bun install
+bun start
 ```
 
-## License
-
-MIT
-
----
-
-## 📚 Documentation
-
-Full documentation: **[docs.opensin.ai](https://docs.opensin.ai)**
-
-| Section | Link |
-|---------|------|
-| Getting Started | [Guide](https://docs.opensin.ai/guide/getting-started) |
-| API Reference | [API](https://docs.opensin.ai/api/overview) |
-| Tutorials | [Tutorials](https://docs.opensin.ai/tutorials/agent-basics) |
-| Integrations | [Integrations](https://docs.opensin.ai/integrations/telegram) |
-| Architecture | [Architecture](https://docs.opensin.ai/architecture/overview) |
-| Community | [Discord](https://discord.gg/opensin) |
-
-## Boundary Guidance for Agents
+## Boundary Guidance
 
 When modifying this repo:
 
-- Prefer Matrix integration work.
-- Keep claims scoped to this integration surface.
-- Do not redefine broader product, ops, or docs canon from here.
+- Prefer Matrix messaging integration and monitoring work.
+- Do not turn this repo into a generic chat bucket.
+- Do not redefine organization docs, architecture, or runtime canon here.
+- Move non-Matrix behavior back to the repos that own those surfaces.
+
+## License
+
+Apache-2.0
